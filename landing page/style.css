@@ -1,0 +1,257 @@
+body{
+    margin: 0px;
+    padding: 0px;
+    background-color: #EFEAE3; 
+}
+.call{
+    position: fixed;
+    display: inline-block;
+    z-index: 100;
+    background-color: black;
+    height: 13rem;
+    width: 3.5rem;
+    border-top-right-radius: 7px;
+    border-bottom-right-radius: 7px;
+    bottom: 7rem;
+    /* opacity: 20%; */
+    color: white; 
+}
+.call ul{
+    z-index: 101;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    /* gap: 2rem; */
+    padding: 2px;
+}
+.chatbot{
+    display: inline-block;
+    position: fixed;
+    height: 5rem;
+    width: 5rem;
+    bottom: 2rem;
+    right: 21px;
+    z-index: 9999;
+    /* box-sizing: 50%;
+    box-shadow: 2px 2px blur-radius grey;  */
+}
+.navigation{
+    top: 0;
+    z-index: 999999;
+}
+.navbar{
+    list-style-type: none;
+    background-color: black;
+    color: aliceblue;
+    display: flex;
+    flex-direction: row;
+    margin: 0%;
+    padding: 10px 50px 10px ;
+    position: fixed;
+    width: 100%;
+    opacity:87%;
+    justify-content: space-between;
+    align-items: center;
+}
+.cplogo{
+    width: 50px; height: 50px;
+    opacity: 100%;
+    margin: 0 7px;
+}
+.logo{
+    display: flex;
+    justify-content: space-between;
+    gap: 10pxpx;
+    align-items: center;
+    padding-left: 10px;
+}
+ul{
+    justify-content: space-between;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+li{
+    padding: 10px;  
+}
+a{
+    text-decoration: none;
+    
+}
+.dropdown {
+    position: relative;
+    display: inline-block;
+  }
+  .dropdown-menu {
+    display: none;
+	position: absolute;
+	background-color: rgb(5, 5, 5);
+    opacity: 81%;
+	min-width: 150px;
+	box-shadow: 5px 16px 16px 8px rgba(0,0,0,0.4);
+	z-index: 1;
+  }
+  .dropdown-menu a {
+    color: #efefef;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+} 
+   .dropdown-menu a:hover {
+      background-color: #2e2c2c;
+ }
+   .dropdown:hover .dropdown-menu {
+      display: block;
+ }
+/* -------------------------svg-----------------------------------*/
+.svg{
+    text-align: right;  
+    /* height:50000px; */
+    /* z-index: 99; */
+    display: flex;
+}
+/* ------------dog----------------------------- */
+#dogBody{
+    animation: wag 2s  ease-in-out infinite;
+    transform-origin: bottom;
+    transform-box:content-box;
+}
+@keyframes wag {
+    0% {
+        transform: rotate(0deg);
+    }
+    25% {
+        transform: rotate(2deg);
+    }
+    50% {
+        transform: rotate(-2deg);
+    }
+    75% {
+        transform: rotate(2deg);
+    }
+    100% {
+        transform: rotate(0deg);
+    }
+}
+/* ------------cat----------------------------- */
+#catTail{
+    animation: tail 3s infinite;
+    transform-origin: top;
+    transform-box: fill-box;
+}
+@keyframes tail {
+    0%{
+        transform: rotate(0deg);
+    }
+	25% {transform: rotate(9deg);
+    }
+    50%{
+        transform: rotate(-5deg)
+    }
+    75%{
+        transform: rotate(9deg);
+    }
+    100%{
+        transform: rotate(0deg);
+    }
+}
+/* ------------human----------------------------- */
+#manHand{
+    animation: hand 2s ease-in-out infinite;
+    transform-origin: center;
+    transform-box: fill-box;
+}
+#girl_hand{
+    animation: ghand 3s ease-in-out infinite;
+    transform-origin: top right;
+    transform-box:fill-box;
+}
+
+@keyframes ghand {
+    0%{   transform: translateY(0px);  
+    }
+    25%{
+        transform: translateY(-5px);
+    }
+    50%{
+        transform: translateY(5px)
+    }
+    75%{
+        transform: translateY(-5px);
+    }
+    100%{
+        transform: translateY(0px); 
+    }
+}
+
+@keyframes hand {
+    0%{
+       bottom: 21px;
+    }
+    to{
+        bottom: 11px;
+        transform: skew(11deg);
+    }
+}
+
+/*----------------------------------------page1-----------------------------------------------------------------*/
+#page1{
+    display: flex;
+    flex-direction: row;
+    height: max-content;
+    width: 100%;
+    
+}
+.content1{
+    align-items: left;
+    height: 50vh;
+    width: 50vw; 
+    /* display: flex;
+    flex-direction: column; */
+    margin-top: 22vh;
+    margin-right: 7vh;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 2px 2px blur-radius black ;
+}
+.content1 p{
+    align-items: center;
+    font-size: 201%;
+    padding-bottom: 7vh;
+}
+.content2{
+    font-size: 201%;
+}
+
+/*--------------------------------------------------------------------->*/
+
+/*--------------------------FOOTER------------------------------------------->*/
+#footer{
+    list-style-type: none;
+    background-color: black;
+    color: aliceblue;
+    display: flex;
+    align-items: center;
+    justify-content: center; /* Center the content horizontally */
+    /* padding-bottom: 0.5rem; */
+    height: 7.5vh;
+    bottom: 0;
+    position: fixed;
+    
+}
+.wrap{
+    display: flex;
+    justify-content: space-around;
+    gap: 2px;
+    align-items: center;
+}
+.img{
+    width: 8%;
+}
+/* #footer ul{
+    gap: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 20%;
+} */

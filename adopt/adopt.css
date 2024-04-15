@@ -1,0 +1,46 @@
+body{
+    margin: 0px;
+    padding: 0px;
+    background-color: #EFEAE3; 
+    font-family: 'Hagrid Trial', sans-serif;
+    font-family: 'Hagrid Text Trial', sans-serif;
+
+}
+
+#pg1{
+
+}
+#navigation{
+    display: block;
+}
+#adopt-svg{
+   align-items: right;
+}
+#hand{
+    animation: hand 1.5s alternate infinite;
+    transform-origin: center;
+    transform-box: fill-box;
+}
+@keyframes hand {
+    from{
+        transform: translateY(-5px);
+    }
+    to{
+        transform: translateY(5px);
+    }
+}
+
+#tongue{
+    animation: tongue 1.5s alternate infinite;
+    transform-origin: left;
+    transform-box: fill-box;
+
+}
+@keyframes tongue {
+    from{
+        transform: translate(-2px);
+    }
+    to{
+        transform: translate(2px);
+    }
+}
